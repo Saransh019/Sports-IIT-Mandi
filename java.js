@@ -3,11 +3,12 @@
     $(".imgAnimate").mouseover(
         function()
         {
-            $(this).attr("src", "giphy.gif");
+
+            $(this).attr("src","assets/gif/Sports_gif/"+$(this).attr("id")+".gif");
         });
     $(".imgAnimate").mouseout(function()
     {   
-        let x = "static.png";
+        let x = "assets/static/Sports/"+$(this).attr("id")+".png";
         $(this).attr("src", x);
     })
 
