@@ -72,6 +72,7 @@
       margin-right: 10px;
   }
   /*----------bootstrap-navbar-css------------*/
+  
   .navbar-logo{
       padding: 15px;
       color: #fff;
@@ -133,6 +134,7 @@
       vertical-align: middle;
       font-weight: 900;
       transition: 0.5s;
+      
   }
   #navbarSupportedContent .active>a:not(:only-child):after {
       transform: rotate(90deg);
@@ -240,3 +242,13 @@
           left: -25px;
       }
   }
+  
+  .fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #00a087;
+  }
+
