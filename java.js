@@ -51,6 +51,9 @@
           }  
           slides[slideIndex-1].style.display = "block"; 
         }
+        $(document).ready(function(){
+            setInterval(function(){ plusSlides(1); },3000);
+        });
 
 //  // ---------Responsive-navbar-active-animation-----------
 // function test(){
@@ -82,9 +85,7 @@
 // 		});
 // 	});
 // }
-// $(document).ready(function(){
-// 	setTimeout(function(){ test(); });
-// });
+
 // $(window).on('resize', function(){
 // 	setTimeout(function(){ test(); }, 500);
 // });
