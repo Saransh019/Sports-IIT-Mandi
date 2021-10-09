@@ -1,280 +1,299 @@
-
+body,* {
+    margin: 0;
+    padding: 0;
+}
+i,svg {
+    margin-right: 10px;
+}
 .imgAnimate{
     width: 300px;
     height: 300px;
 }
-  .cards-list>*{
+.cards-list>*{
       padding: 0;
-  }
-  
-  .card {
-    margin: 30px auto;
+}
+.card {
     width: 150px;
     height: 150px;
+    margin: 30px auto;
     border-radius: 20px;
     box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     transition: 0.4s;
   }
   
-  .card .card_image {
-    width: inherit;
-    height: inherit;
+.card .card_image {
+    width: 150px;
+    height: 150px;
     border-radius: 20px;
   }
-  
-  .card .card_image img {
+.card .card_image img {
     width: inherit;
     height: inherit;
     border-radius: 20px;
-    
     object-fit: cover;
-  }
+}
   
-  .card .card_title {
-      
+.card .card_title {
     text-align: center;
-    
     border-radius: 0px 0px 40px 40px;
-    
     font-family: sans-serif;
     font-weight: bold;
     font-size: 15px;
     margin-top: -80px;
     height: 40px;
-  }
-  
-
-  .card:hover {
+}
+.card:hover {
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-     
-  }
-  /*
-  .title-white {
-    color: white;
-  }
-  
-  .title-black {
-    color: black;
-  }
-  */
-  .bottom {
+      -5px -5px 30px 15px rgba(0,0,0,0.22); 
+}
+.bottom {
     position: absolute;
     bottom: 0px;
     background-color: black;
     color: white;
     width: 100%;
     border-radius: 0px 0px 20px 20px;
-    
     opacity: 0.4;
     font-size: 18px;
-  }
-  
-  #c1
-  {
-    bottom: 0;
-  }
-  @media all and (max-width: 500px) {
+}
+@media all and (max-width: 500px) {
     .card-list {
-      /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
     }
-  }
-  @import url('https://fonts.googleapis.com/css?family=Roboto');
+}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
-  body{
-      font-family: 'Roboto', sans-serif;
-  }
-  * {
-      margin: 0;
-      padding: 0;
-  }
-  i,svg {
-      margin-right: 10px;
-  }
-  /*----------bootstrap-navbar-css------------*/
-  
-  .navbar-logo{
-      padding: 15px;
-      color: #fff;
-  }
-  .navbar-mainbg{
-      background-color: #5161ce;
-      padding: 0px;
-  }
-  #navbarSupportedContent{
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      /* flex-direction: row-reverse; */
-      padding-right: 2%;
-      float: right;
-  }
-  #logo-img{
-      width: 100px;
-      height: 60px;
-      object-fit: contain;
-      filter: invert(10);
+/* Navbar section */
 
-  }
-  #navbarSupportedContent ul{
-      padding: 0px;
-      margin: 0px;
-  }
-  #navbarSupportedContent ul li a i{
-      margin-right: 10px;
-  }
-  #navbarSupportedContent li {
-      list-style-type: none;
-      float: right;
-  }
-  #navbarSupportedContent ul li a{
-      color: rgba(255,255,255,0.5);
-      text-decoration: none;
-      font-size: 15px;
-      display: block;
-      padding: 20px 20px;
-      transition-duration:0.6s;
-      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      position: relative;
-  }
-  #navbarSupportedContent>ul>li.active>a{
-      color: #5161ce;
-      background-color: transparent;
-      transition: all 0.7s;
-  }
-  #navbarSupportedContent a:not(:only-child):after {
-      content: "\f105";
-      position: absolute;
-      right: 20px;
-      top: 10px;
-      font-size: 14px;
-      font-family: "Font Awesome 5 Free";
-      display: inline-block;
-      padding-right: 3px;
-      vertical-align: middle;
-      font-weight: 900;
-      transition: 0.5s;
-      
-  }
-  #navbarSupportedContent .active>a:not(:only-child):after {
-      transform: rotate(90deg);
-  }
-  .hori-selector{
-      display:inline-block;
-      position:absolute;
-      height: 100%;
-      top: 0px;
-      left: 0px;
-      transition-duration:0.6s;
-      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      background-color: #fff;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      margin-top: 10px;
-  }
-  .hori-selector .right,
-  .hori-selector .left{
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      background-color: #fff;
-      bottom: 10px;
-  }
-  .hori-selector .right{
-      right: -25px;
-  }
-  .hori-selector .left{
-      left: -25px;
-  }
-  .hori-selector .right:before,
-  .hori-selector .left:before{
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #5161ce;
-  }
-  .hori-selector .right:before{
-      bottom: 0;
-      right: -25px;
-  }
-  .hori-selector .left:before{
-      bottom: 0;
-      left: -25px;
-  }
-  
-  
-  @media(min-width: 992px){
-      .navbar-expand-custom {
-          -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-          -ms-flex-pack: start;
-          justify-content: flex-start;
-      }
-      .navbar-expand-custom .navbar-nav {
-          -ms-flex-direction: row;
-          flex-direction: row;
-      }
-      .navbar-expand-custom .navbar-toggler {
-          display: none;
-      }
-      .navbar-expand-custom .navbar-collapse {
-          display: -ms-flexbox!important;
-          display: flex!important;
-          -ms-flex-preferred-size: auto;
-          flex-basis: auto;
-      }
-      #navbarSupportedContent{
-          flex-direction: row-reverse;
-      }
-  }
-  
-  
-  @media (max-width: 991px){
-      #navbarSupportedContent ul li a{
-          padding: 12px 30px;
-      }
-      .hori-selector{
-          margin-top: 0px;
-          margin-left: 10px;
-          border-radius: 0;
-          border-top-left-radius: 25px;
-          border-bottom-left-radius: 25px;
-      }
-      .hori-selector .left,
-      .hori-selector .right{
-          right: 10px;
-      }
-      .hori-selector .left{
-          top: -25px;
-          left: auto;
-      }
-      .hori-selector .right{
-          bottom: -25px;
-      }
-      .hori-selector .left:before{
-          left: -25px;
-          top: -25px;
-      }
-      .hori-selector .right:before{
-          bottom: -25px;
-          left: -25px;
-      }
-  }
-  
-  .fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
+.nav {
     width: 100%;
-    background-color: #00a087;
+    height: 65px;
+    position: fixed;
+    line-height: 30px;
+    text-align: center;
+    z-index: 99;
+    top: 0;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 30px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00E676;
+}
+.navTrigger {
+    display: none;
+}
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i,svg {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.slideshow-container {
+    height: 100vh;
+    width: 100%;
   }
-  .carousel{
-      color: black
+
+  .mySlides {
+    display: none;
   }
+  .mySlides img{
+      height: 100vh;
+      width: 100%;
+      object-fit: fill;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    height: 100%;
+    padding-top: 50vh;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.527);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    /* background-color: gray; */
+    text-shadow: 1px 1px 200px black;
+    
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .fade:not(.show) {
+    opacity: 1;
+}
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.affix {
+    padding: 1;
+    background-color: #111;
+}
+
+ 
   
