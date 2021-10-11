@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 body,* {
     margin: 0;
     padding: 0;
+    font-family: 'Sora', sans-serif;
 }
 i,svg {
     margin-right: 10px;
@@ -8,6 +10,14 @@ i,svg {
 .imgAnimate{
     width: 300px;
     height: 300px;
+}
+
+.sports-heading{
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 20px rgb(255, 2, 2);
+  font-size: 3rem;
 }
 .cards-list>*{
       padding: 0;
@@ -63,13 +73,12 @@ i,svg {
       flex-direction: column;
     }
 }
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
 html,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
 }
@@ -88,11 +97,12 @@ body {
     top: 0;
 }
 
-.nav div.logo {
+.nav .logo {
     float: left;
     width: auto;
     height: auto;
     padding-left: 3rem;
+    /* padding-bottom: 10px; */
 }
 
 .nav div.logo a {
@@ -104,14 +114,15 @@ body {
 .nav div.logo a:hover {
     color: #00E676;
 }
-.nav div.logo .img {
-  filter:invert(100%);
-  width: 150%; 
-  top: 0; 
-  margin : 0; 
-  height:50px;
+.nav div.logo img {
+    filter: invert(100%);
+    height: 70px;
+    object-fit: scale-down;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 60px;
 }
-
 .nav div.main_list {
     height: 65px;
     float: right;
@@ -135,9 +146,11 @@ body {
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: red;
+    color: white;
     line-height: 30px;
     font-size: 2.4rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px black;
 }
 
 .nav div.main_list ul li a:hover {
@@ -224,6 +237,7 @@ body {
 .slideshow-container {
     height: 100vh;
     width: 100%;
+    box-shadow: 1px 1px 15px 2px gray;
   }
 
   .mySlides {
@@ -348,7 +362,6 @@ body {
   }
   /*variations >>*/
   body{
-    font-family: 'Bangers', cursive;
     font-size: 12px;
     color: white;
     display: flex;
@@ -388,17 +401,18 @@ body {
     background-image: linear-gradient(to top, #907296, #3650a2, #0086d0, #00bae7, #12ebeb);
   }
   
-  h1{
-    width: 100%;
-    margin: 80px 60%;
-    padding: 20px;
-    text-align: center;
-    letter-spacing: .1em;
-    border-radius: 35px;
-    color: #4f1884;
-    background: #efe3ff;
-  }
- 
+  
+ .blog-card h1{
+  width: 100%;
+  margin: 80px 0;
+  line-height: 30%;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: .1em;
+  border-radius: 35px;
+  color: #4f1884;
+  background: #efe3ff;
+}
   /*PEN STYLES*/
   
 .blog-card {
