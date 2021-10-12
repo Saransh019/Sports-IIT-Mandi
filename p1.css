@@ -1,102 +1,89 @@
-.container{
-  height: 100px;
-  width: 100vw;
-  max-height: 800px;
-  max-width: 1280px;
-  min-height: 600px;
-  min-width: 1000px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-}
-.border{
-  height: 369px;
-  width: 290px;
-  background: transparent;
-  border-radius: 10px;
-  transition: border 1s;
+.card-council {
   position: relative;
-
-  &:hover
-    border: 1px solid white;
-  }
-.card{
-  height: 379px;
-  width: 300px;
-  background: grey;
-  border-radius: 10px;
-  transition: background 0.8s;
+  top: 50%;
+  left: 50%;
+  margin-top:10px ;
+  margin-bottom:10px ;
+  padding: auto;
+  transform: translate(-50%,-50%);
+  width: 250px;
+  height: 95%;
+  background: #000;
+}
+.card-council .image {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  background: black;
-  box-shadow: 0 70px 63px -60px #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
-.card0{
-  background: url('assets\static\Coordi\Aryansh.jpeg') center center no-repeat;
-  background-size: 300px;
+.card-council .image img {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
 }
-
-.card0 .hover{
-    background: url('assets\static\Coordi\Aryansh.jpeg;') left center no-repeat;
-    background-size: 600px;
+.card-council:hover .image img {
+  opacity: .5;
+  transform: translateX(30%);/*100%*/
 }
-    h2{
-      opacity: 1;
-    }
-    .fa{
-      opacity: 1;
+.card-council .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  width: 70%;/*100%*/
+  height: 100%;
+  background: #ffc107;
+  transition: .5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
 }
-.card1
-  background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') center center no-repeat
-  background-size: 300px;
-
-  &:hover
-    background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') left center no-repeat
-    background-size: 600px;
-
-    h2
-      opacity: 1;
-
-    .fa
-      opacity: 1;
-
-.card2
-  background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') center center no-repeat
-  background-size: 300px
-
-  &:hover
-    background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') left center no-repeat
-    background-size: 600px
-
-    h2
-      opacity: 1
-
-    .fa
-      opacity: 1
-
-h2
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
-  color: white
-  margin: 20px
-  opacity: 0
-  transition: opacity 1s
-
-.fa
-  opacity: 0
-  transition: opacity 1s
-
-.icons
-  position: absolute
-  fill: #fff
-  color: #fff
-  height: 130px
-  top: 226px
-  width: 50px
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: space-around
+.card-council:hover .details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+.card-council .details .center {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card-council .details .center h1 {
+  margin: 0;
+  padding: 0;
+  color: #ff3636;
+  line-height: 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.card-council .details .center h1 span {
+  font-size: 14px;
+  color: #262626;
+}
+.card-council .details .center p {
+  margin: 10px 0;
+  padding: 0;
+  color: #262626;
+}
+.card-council .details .center ul {
+  margin: 10px auto 0;
+  padding: 0;
+  display: table;
+}
+.card-council .details .center ul li {
+  list-style: none;
+  margin: 0 5px;
+  float: left;
+}
+.card-council .details .center ul li a {
+  display: block;
+  background: #262626;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  transform: .5s;
+}
+.card-council .details .center ul li a:hover {
+  background: #ff3636;
+}
