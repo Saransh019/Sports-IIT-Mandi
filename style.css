@@ -143,7 +143,7 @@ i,svg {
     text-decoration: none;
     color: white;
     line-height: 30px;
-    font-size: 2.4rem;
+    font-size: 2.5em;
     font-weight: 400;
     text-shadow: 1px 1px 5px black;
 }
@@ -343,7 +343,6 @@ i,svg {
   
   .blog-card {
     display: flex;
-    flex-direction: column;
     margin: 1rem 0;
     box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
     margin-bottom: 1.6%;
@@ -369,6 +368,7 @@ i,svg {
     position: relative;
     z-index: 0;
     height: 200px;
+    flex-basis: 30%;
   }
   .blog-card .photo {
     position: absolute;
@@ -379,6 +379,7 @@ i,svg {
     background-size: cover;
     background-position: center;
     transition: transform 0.2s;
+    border-radius: 5px 0 0 5px;
   }
   .blog-card .details, .blog-card .details ul {
     margin: auto;
@@ -393,37 +394,9 @@ i,svg {
     margin: auto;
     transition: left 0.2s;
     background: rgba(0, 0, 0, .6);
-    color: #fff;
     padding: 10px;
     width: 100%;
-    font-size: 2rem;
-  }
-  .blog-card .details a {
-    text-decoration: dotted underline;
-  }
-  .blog-card .details ul li {
-    display: inline-block;
-  }
-  .blog-card .details .author:before {
-    font-family: FontAwesome;
-    margin-right: 10px;
-    content: "\f007";
-  }
-  .blog-card .details .date:before {
-    font-family: FontAwesome;
-    margin-right: 10px;
-    content: "\f133";
-  }
-  .blog-card .details .tags ul:before {
-    font-family: FontAwesome;
-    content: "\f02b";
-    margin-right: 10px;
-  }
-  .blog-card .details .tags li {
-    margin-right: 2px;
-  }
-  .blog-card .details .tags li:first-child {
-    margin-left: -4px;
+    min-height: 500px;
   }
   .blog-card .description {
     padding: 1rem;
@@ -431,6 +404,7 @@ i,svg {
     position: relative;
     z-index: 1;
     font-size: 0.8rem;
+    flex-basis: 70%;
   }
   .blog-card .description h1, .blog-card .description h2 {
     font-family: Poppins, sans-serif;
@@ -438,19 +412,12 @@ i,svg {
   .blog-card .description h1 {
     line-height: 1;
     margin: 0;
-    font-size: 2.5rem;
-  }
-  .blog-card .description h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #a2a2a2;
-    margin-top: 5px;
+    font-size: 1.75rem;
   }
   .blog-card p {
     position: relative;
     margin: 1rem 0 0;
-    font-size: 1rem;
+    font-size: 1.25em;
     color: #473e3e;
   }
   .blog-card p:first-of-type {
@@ -470,21 +437,14 @@ i,svg {
   }
   @media (min-width: 640px) {
     .blog-card {
-      flex-direction: row;
       max-width: 1000px;
    }
-    .blog-card .meta {
-      flex-basis: 40%;
-      height: auto;
-   }
-    .blog-card .description {
-      flex-basis: 60%;
-   }
-    .blog-card .description:before {
+   
+   .blog-card .description:before {
       transform: skewX(-3deg);
       content: "";
       background: #fff;
-      width: 30px;
+      width: 40px;
       position: absolute;
       left: -10px;
       top: 0;
@@ -504,7 +464,11 @@ i,svg {
       padding-left: 25px;
    }
   }
-
+  @media (max-width:640px) {
+    .blog-card p {
+      font-size: 1em;
+    }
+  }
   @import url('https://fonts.googleapis.com/css?family=Roboto:700');
  @keyframes showTopText {
 	 0% {
