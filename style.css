@@ -450,7 +450,7 @@ i,svg {
   .blog-card p {
     position: relative;
     margin: 1rem 0 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #473e3e;
   }
   .blog-card p:first-of-type {
@@ -529,9 +529,9 @@ i,svg {
 	 color: #222;
 	 font-family: Roboto, Arial, sans-serif;
 	 height: 90vmin;
-	 left: 50%;
+	 left: 50vw;
 	 position: absolute;
-	 top: 50%;
+	 top: 50vh;
 	 transform: translate(-50%, -50%);
 	 width: 90vmin;
 }
