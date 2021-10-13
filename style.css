@@ -630,3 +630,6 @@ i,svg {
 .card-council .details .center ul li a:hover {
   background: #ff3636;
 }
+.footer-icon-social i{
+  font-size: 1.5rem;
+}
