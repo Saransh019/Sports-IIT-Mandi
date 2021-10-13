@@ -633,3 +633,9 @@ i,svg {
 .footer-icon-social i{
   font-size: 1.5rem;
 }
+footer a:hover{
+color: #ff3636;
+}
+footer a{
+  color:white;
+}
