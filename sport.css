@@ -11,8 +11,8 @@
   font-size: 1.5em;
 }
 .sport-card{
-  max-height: 300px;
-  max-width: 250px;
+  height: 250px;
+  width: 250px;
   margin-bottom: 15px;
   border-radius: 50%;
 }
@@ -26,10 +26,14 @@
   transition: 1s;
   overflow: hidden;
 }
+.sport-pic{
+  max-height: 80%;
+  width: 100%;
+  border-radius: 50%;
+}
 .sport-pic img{
   width: 100%;
   height: 100%;
-  border-radius: 50%;
 }
 .sport-pic{
   overflow: hidden;
