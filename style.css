@@ -636,11 +636,14 @@ i,svg {
 }
 footer a:hover{
 color: #ff3636;
+font-size: 20px;
 }
+
 footer a{
   color:white;
   text-decoration: none;
 }
+
 
 .banner-pic{
   background-image: url(./assets/static/Carousel_2.png);
