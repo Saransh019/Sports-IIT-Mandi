@@ -55,6 +55,9 @@
             setInterval(function(){ plusSlides(1); },3000);
         });
 
+
+    
+        // $("svg").css("left","")
 //  // ---------Responsive-navbar-active-animation-----------
 // function test(){
 // 	var tabsNewAnim = $('#navbarSupportedContent');
