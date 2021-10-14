@@ -663,7 +663,7 @@ footer a{
   left: 10vw;
   background-color: #ffffff;
   top: -10vh;
-  height: 100vh;
+  height: fit-content;
   border-radius: 30px;
   box-shadow: 5px 1px 15px 2px gray;
 }

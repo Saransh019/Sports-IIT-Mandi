@@ -1,0 +1,30 @@
+<div class="row">
+                <div class="col">
+                  <div class="card-council-t">
+                    <div class="image">
+                      <img src="assets\static\Coordi\Aryansh.jpeg" />
+                    </div>
+                    <div class="details">
+                      <div class="center">
+                        <h1>Someone famous<br><span>team leader</span></h1>
+                        <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="card-council-t">
+                    <div class="image">
+                      <img src="assets\static\Coordi\Aryansh.jpeg" />
+                    </div>
+                    <div class="details">
+                      <div class="center">
+                        <h1>Someone famous<br><span>team leader</span></h1>
+                        <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
