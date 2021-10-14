@@ -657,8 +657,6 @@ footer a{
   color:white;
   text-decoration: none;
 }
-
-
 .banner-pic{
   background-image: url(./assets/static/Carousel_2.png);
   background-attachment:fixed;
@@ -684,34 +682,25 @@ footer a{
   border-radius: 30px;
   box-shadow: 5px 1px 15px 2px gray;
 }
-
-
-#about-us
-{
+#about-us{
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
-
-.btm
-{
+.btm{
     line-height: 2;
     font-size: 18px;
     margin:5% ;
 }
-#imgbtm
-{
+#imgbtm{
     height: 20vh;
 }
-.he1
-{
+.he1{
     font-size: 75px;
     min-width: 30%;
     color: indigo;
     text-align: center;
 }
-.he2
-{
+.he2{
     font-size: 40px;
     color: green;
     text-align: center;
