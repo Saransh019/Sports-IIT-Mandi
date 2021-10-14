@@ -340,8 +340,7 @@ i,svg {
   border-radius: 35px;
   color: white;
   background: #4f1884;
-  font-size: 1em;
-  
+  font-size: 0.5em;
   font-family: "Lucida Console", "Courier New", monospace;
 }
   /*PEN STYLES*/
@@ -408,7 +407,7 @@ i,svg {
     background: rgb(211, 226, 226);
     position: relative;
     z-index: 1;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 2;
     flex-basis: 70%;
   }
@@ -422,8 +421,12 @@ i,svg {
   }
   .blog-card p {
     position: relative;
-    margin: 1rem 0 0;
-    font-size: 1.25em;
+    margin-left: 3.2%;
+    margin-right: 2.1%;
+    
+    font-size: 1.4em;
+    font: size min 0.85em;
+    line-height: 1.5;
     color: #473e3e;
   }
   .blog-card p:first-of-type {
