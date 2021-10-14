@@ -1,4 +1,4 @@
-consoleText(['Cricket.'], 'text',['tomato','rebeccapurple','lightblue']);
+consoleText(['Basket Ball.'], 'text',['tomato','greenyellow','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
