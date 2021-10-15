@@ -166,7 +166,7 @@ body,* {
 /* Sport Descpriction */
 
 .banner-pic{
-  background-image: url(./assets/static/Carousel_2.png);
+  background-image: url(./assets/static/General/Carousel_2.png);
   background-attachment:fixed;
   background-size: cover;
   width: 98.9vw;
