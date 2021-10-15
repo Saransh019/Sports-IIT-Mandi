@@ -608,12 +608,12 @@ i,svg {
   padding: 0;
   color: #ff3636;
   line-height: 20px;
-  font-size: 10px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 .card-council .details .center h1 span {
   font-size: 14px;
-  color: #262626;
+  color: #239c17;
 }
 .card-council .details .center p {
   margin: 10px 0;
