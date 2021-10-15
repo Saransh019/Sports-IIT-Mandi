@@ -70,6 +70,12 @@ i,svg {
     opacity: 0.4;
     font-size: 18px;
 }
+.bottom a{
+  color: azure;
+  font-size: 14px;
+  
+  text-decoration:none;
+}
 @media all and (max-width: 500px) {
     .card-list {
       flex-direction: column;
