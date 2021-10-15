@@ -1,4 +1,21 @@
-consoleText(['Basket Ball.'], 'text',['tomato','greenyellow','lightblue']);
+$('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+
+});
+
+      $(window).scroll(function() {
+          if($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          }else {
+              $('.nav').removeClass('affix');
+          }
+      }); 
+
+consoleText([$(document).attr('title')+'.'], 'text',['tomato','greenyellow','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
