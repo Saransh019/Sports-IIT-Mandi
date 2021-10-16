@@ -671,7 +671,7 @@ footer a{
 .btm{
     
     
-    font-size: 1.8em;
+  font-size: calc(10px + 0.8vw);
    line-height: 1.2;
   
 }
