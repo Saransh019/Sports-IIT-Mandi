@@ -585,7 +585,7 @@ i,svg {
   transition: .5s;
 }
 .card-council:hover .image img {
-  opacity: .5;
+  opacity: .4;
   transform: translateX(30%);/*100%*/
 }
 .card-council .details {
@@ -614,14 +614,14 @@ i,svg {
 .card-council .details .center h1 {
   margin: 0;
   padding: 0;
-  color: #ff3636;
+  color: black;
   line-height: 20px;
   font-size: 15px;
   text-transform: uppercase;
 }
 .card-council .details .center h1 span {
   font-size: 14px;
-  color: #239c17;
+  color: black;
 }
 .card-council .details .center p {
   margin: 10px 0;
