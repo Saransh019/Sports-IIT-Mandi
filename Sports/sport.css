@@ -77,7 +77,6 @@ body{
   text-decoration: none;
   color: white;
   line-height: 30px;
-  font-family: "Lucida Console", "Courier New", monospace;
   font-size: 2.7em;
   font-weight: 400;
   text-shadow: 1px 1px 5px black;
@@ -310,7 +309,7 @@ body{
   }
 
   .banner-pic{
-    background-image: url(./assets/static/Carousel_2.png);
+    background-image: url(./assets/static/Carousel_1.png);
     background-attachment:fixed;
     background-size: cover;
     width: 98.9vw;
